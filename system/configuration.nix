@@ -124,21 +124,6 @@
     # Terminal emulator
     kitty
     wezterm
-
-    # Use for hyprland
-    wl-clipboard
-    brightnessctl
-    hyprshot
-    hyprpaper
-    swww
-    eww
-    waybar
-    waypaper
-    hyprsunset
-    networkmanagerapplet
-    swaynotificationcenter
-    dunst
-    libnotify
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

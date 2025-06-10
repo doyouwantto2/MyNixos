@@ -4,5 +4,6 @@
     spotify
     teams-for-linux
     discord
+    zoom-us
   ];
 }

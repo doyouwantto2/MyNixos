@@ -7,6 +7,8 @@
     cava
     evince
     rofi-wayland
+    swww
+    eww
   ];
 }
 
