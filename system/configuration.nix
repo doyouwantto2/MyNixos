@@ -127,7 +127,6 @@
     wezterm
 
     pipewire
-    alsa-oss
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
