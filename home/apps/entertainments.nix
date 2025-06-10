@@ -2,8 +2,8 @@
 {
   home.packages = with pkgs; [
     keypunch
-    krita
-    unityhub
+    veloren
+    airshipper
   ];
 }
 

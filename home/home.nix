@@ -9,9 +9,13 @@
     ./languages/csharp.nix
 
     ./apps/extra.nix
-    ./apps/skills.nix
+    ./apps/entertainments.nix
     ./apps/social.nix
     ./apps/utilities.nix
+    ./apps/programming.nix
+
+    ./offices/libre.nix
+    ./offices/wps.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
