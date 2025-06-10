@@ -6,7 +6,6 @@
     ghostscript
     fd
     ripgrep
-    wine
   ];
 }
 
