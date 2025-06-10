@@ -113,31 +113,32 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # Core
+    git
+    home-manager
 
-  git
-  home-manager
+    # Text editor
+    neovim
+    vscode
 
-  # Text editor
-  neovim
-  vscode
+    # Terminal emulator
+    kitty
+    wezterm
 
-  # Terminal emulator
-  kitty
-  wezterm
-
-  # Use for hyprland
-  wl-clipboard
-  brightnessctl
-  hyprshot
-  hyprpaper
-  swww
-  eww
-  waybar
-  hyprsunset
-  networkmanagerapplet
-  swaynotificationcenter
-  dunst
-  libnotify
+    # Use for hyprland
+    wl-clipboard
+    brightnessctl
+    hyprshot
+    hyprpaper
+    swww
+    eww
+    waybar
+    waypaper
+    hyprsunset
+    networkmanagerapplet
+    swaynotificationcenter
+    dunst
+    libnotify
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

@@ -1,6 +1,13 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./languages/cplus.nix
+    ./languages/js.nix
+    ./languages/lua.nix
+    ./languages/python.nix
+    ./languages/ruby.nix
+  ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "emiya2467";
@@ -41,15 +48,9 @@
     gnomeExtensions.kando-integration
 
     # Language configurations for neovim
-    lua
-    lua-language-server
-    luarocks
-    ruby
     imagemagick
     ghostscript
     fd
-    nodejs
-    conda
     ripgrep
 
     # Package manager (project)
