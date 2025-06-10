@@ -6,6 +6,11 @@
     ./languages/lua.nix
     ./languages/python.nix
     ./languages/ruby.nix
+
+    ./apps/extra.nix
+    ./apps/skills.nix
+    ./apps/social.nix
+    ./apps/utilities.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -24,37 +29,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   nixpkgs.config.allowUnfree = true;
-  home.packages = with pkgs; [
-
-    # Entertainment
-    keypunch
-    spotify
-
-    # Fonts
-    line-awesome
-
-    # Useful app
-    teams-for-linux
-    discord
-    krita
-
-    # Utilities
-    unzip
-    cava
-    evince
-    rofi-wayland
-    kando
-    gnomeExtensions.kando-integration
-
-    # Language configurations for neovim
-    imagemagick
-    ghostscript
-    fd
-    ripgrep
-
-    # Package manager (project)
-    docker
-  ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
