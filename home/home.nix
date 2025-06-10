@@ -7,6 +7,7 @@
     ./languages/python.nix
     ./languages/ruby.nix
     ./languages/csharp.nix
+    ./languages/rust.nix
 
     ./apps/extra.nix
     ./apps/entertainments.nix
