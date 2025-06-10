@@ -12,7 +12,7 @@
       user = "emiya2467";
     in 
     {
-      nixosConfigurations.${user} = nixpkgs.lib.nixosSystem {  
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {  
         inherit system;
         modules = [ ./system/configuration.nix ];
       };

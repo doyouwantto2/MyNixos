@@ -130,6 +130,9 @@
   brightnessctl
   hyprshot
   hyprpaper
+  swww
+  eww
+  waybar
   hyprsunset
   networkmanagerapplet
   swaynotificationcenter
