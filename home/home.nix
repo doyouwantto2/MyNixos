@@ -2,7 +2,10 @@
 
 {
   imports = [
-    ./languages/languages.nix
+    ./languages/js.nix
+    ./languages/lua.nix
+    ./languages/python.nix
+    ./languages/ruby.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
