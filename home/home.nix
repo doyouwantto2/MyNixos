@@ -6,6 +6,7 @@
     ./languages/lua.nix
     ./languages/python.nix
     ./languages/ruby.nix
+    ./languages/csharp.nix
 
     ./apps/extra.nix
     ./apps/skills.nix
