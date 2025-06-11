@@ -36,6 +36,8 @@
   # plain files is through 'home.file'.
   home.file = {
     ".config/rofi".source = ./apps/configs/rofi;
+    ".config/cava".source = ./apps/configs/cava;
+    ".config/nvim".source = ./apps/configs/nvim;
   };
 
   # Home Manager can also manage your environment variables through
