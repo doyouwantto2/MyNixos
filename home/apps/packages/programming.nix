@@ -4,6 +4,7 @@
     unityhub
     arduino
     krita
+    wpsoffice
   ];
 }
 

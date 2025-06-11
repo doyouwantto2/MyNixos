@@ -9,12 +9,11 @@
     ./languages/csharp.nix
     ./languages/rust.nix
 
-    ./apps/extra.nix
-    ./apps/entertainments.nix
-    ./apps/social.nix
-    ./apps/utilities.nix
-    ./apps/programming.nix
-    ./apps/wps.nix
+    ./apps/packages/entertainments.nix
+    ./apps/packages/extra.nix
+    ./apps/packages/programming.nix
+    ./apps/packages/social.nix
+    ./apps/packages/utilities.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -36,7 +35,7 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    ".config/rofi".source = ./apps/rofi;
+    ".config/rofi".source = ./apps/configs/rofi;
   };
 
   # Home Manager can also manage your environment variables through
