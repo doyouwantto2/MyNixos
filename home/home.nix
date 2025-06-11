@@ -14,9 +14,7 @@
     ./apps/social.nix
     ./apps/utilities.nix
     ./apps/programming.nix
-
-    ./offices/libre.nix
-    ./offices/wps.nix
+    ./apps/wps.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
