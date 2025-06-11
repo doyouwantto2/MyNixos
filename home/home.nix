@@ -38,7 +38,7 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    ".config/rofi".source = ./home/rofi;
+    ".config/rofi".source = ./rofi;
   };
 
   # Home Manager can also manage your environment variables through
