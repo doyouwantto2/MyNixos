@@ -5,6 +5,7 @@
     arduino
     krita
     wpsoffice
+    quickshell.packages.x86_64-linux.default
   ];
 }
 
