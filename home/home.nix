@@ -38,6 +38,8 @@
     ".config/rofi".source = ./apps/configs/rofi;
     ".config/cava".source = ./apps/configs/cava;
     ".config/nvim".source = ./apps/configs/nvim;
+    ".config/hypr".source = ./apps/configs/hypr;
+    ".config/eww".source = ./apps/configs/eww;
   };
 
   # Home Manager can also manage your environment variables through

@@ -1,0 +1,6 @@
+(defwindow my_window
+  :monitor 0
+  :visible false
+  :geometry (geometry :x "100px" :y "100px" :width "200px" :height "100px")
+  (label :text "Hello, EWW!"))
+
