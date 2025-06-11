@@ -1,4 +1,4 @@
-{ config, pkgs, quickshell, system, ...}:
+{ config, pkgs, ...}:
 {
   home.packages = with pkgs; [
     kando
@@ -8,7 +8,6 @@
     rofi-wayland
     swww
     eww
-    quickshell.packages.${system}.default
   ];
 }
 
