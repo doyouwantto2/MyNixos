@@ -41,7 +41,7 @@
     "nvim" = {
       source = "/home/emiya2467/.config/nvim";
       target = "/home/emiya2467/MyNixOS/home/nvim";
-    }
+    };
   };
 
   # Home Manager can also manage your environment variables through
