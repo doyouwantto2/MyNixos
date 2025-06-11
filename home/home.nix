@@ -38,9 +38,9 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    "nvim" = {
-      source = "/home/emiya2467/.config/nvim";
-      target = "/home/emiya2467/MyNixOS/home/nvim";
+    "rofi" = {
+      source = "/home/emiya2467/.config/rofi";
+      target = ./rofi;
     };
   };
 
