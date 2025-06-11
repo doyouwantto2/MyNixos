@@ -8,6 +8,7 @@
     ./languages/ruby.nix
     ./languages/csharp.nix
     ./languages/rust.nix
+    ./languages/cplus.nix
 
     ./apps/packages/entertainments.nix
     ./apps/packages/extra.nix
