@@ -40,7 +40,7 @@
   home.file = {
     "rofi" = {
       source = "/home/emiya2467/.config/rofi";
-      target = ./rofi;
+      target = "/home/emiya2467/MyNixOS/home/rofi";
     };
   };
 
