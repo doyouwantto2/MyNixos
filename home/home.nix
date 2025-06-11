@@ -38,10 +38,7 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    "rofi" = {
-      source = "/home/emiya2467/.config/rofi";
-      target = "/home/emiya2467/MyNixOS/home/rofi";
-    };
+    ".config/rofi".source = ./home/rofi;
   };
 
   # Home Manager can also manage your environment variables through
