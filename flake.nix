@@ -24,6 +24,10 @@
 
       homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = {
+          inherit quickshell;
+          inherit system;
+        };
         modules = [ ./home/home.nix ];
       };
 
