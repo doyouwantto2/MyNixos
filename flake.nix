@@ -7,14 +7,17 @@
 
   outputs = { nixpkgs, home-manager, ... }: 
     let
+
       userSettings = rec {
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
         userName = "emiya2467";
         userEmail = "tinhphong2580@gmail.com";
       };
+
     in 
     {
+
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {  
         system = userSettings.system;
         extraSpecialArgs = {
