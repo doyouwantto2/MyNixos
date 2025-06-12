@@ -16,7 +16,7 @@
     in 
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {  
-        inherit userSettings.system;
+        inherit userSettings.${system};
         extraSpecialArgs = {
           inherit userSettings;
         };
