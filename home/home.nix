@@ -1,8 +1,6 @@
 { config, pkgs, userSettings, ... }:
 
 {
-  inherit userSettings.pkgs;
-
   imports = [
     ./languages/js.nix
     ./languages/lua.nix

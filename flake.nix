@@ -16,13 +16,16 @@
     in 
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {  
+        inherit userSettings.system;
         extraSpecialArgs = {
           inherit userSettings;
         };
+
         modules = [ ./system/configuration.nix ];
       };
 
       homeConfigurations.${userSettings.userName} = home-manager.lib.homeManagerConfiguration {
+        inherit userSettings.pkgs;
         extraSpecialArgs = {
           inherit userSettings;
         };

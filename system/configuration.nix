@@ -5,8 +5,6 @@
 { config, pkgs, inputs, userSettings, ... }:
 
 {
-  inherit userSettings.system;
-
   imports =
     [ # Include the results of the hardware scan.
       ./hyprland.nix
