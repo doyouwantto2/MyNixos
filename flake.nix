@@ -7,7 +7,7 @@
 
   outputs = { nixpkgs, home-manager, ... }: 
     let
-      userSettings = {
+      userSettings = rec {
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
         userName = "emiya2467";
