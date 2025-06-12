@@ -7,21 +7,26 @@
 
   outputs = { nixpkgs, home-manager, ... }: 
     let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-      user = "emiya2467";
+      userSettings = {
+        system = "x86_64-linux";
+        pkgs = nixpkgs.legacyPackages.${system};
+        userName = "emiya2467";
+        userEmail = "tinhphong2580@gmail.com";
+      };
     in 
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {  
-        inherit system;
+        extraSpecialArgs = {
+          inherit userSettings;
+        };
         modules = [ ./system/configuration.nix ];
       };
 
-      homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+      homeConfigurations.${userSettings.userName} = home-manager.lib.homeManagerConfiguration {
         extraSpecialArgs = {
-          inherit system;
+          inherit userSettings;
         };
+
         modules = [ ./home/home.nix ];
       };
 
