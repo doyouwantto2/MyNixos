@@ -20,9 +20,6 @@
 
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {  
         system = userSettings.system;
-        extraSpecialArgs = {
-          inherit userSettings;
-        };
 
         modules = [ ./system/configuration.nix ];
       };
