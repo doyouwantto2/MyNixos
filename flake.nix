@@ -16,7 +16,7 @@
     in 
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {  
-        inherit userSettings.${system};
+        system = userSettings.system;
         extraSpecialArgs = {
           inherit userSettings;
         };
@@ -25,7 +25,7 @@
       };
 
       homeConfigurations.${userSettings.userName} = home-manager.lib.homeManagerConfiguration {
-        inherit userSettings.pkgs;
+        pkgs = userSettings.pkgs;
         extraSpecialArgs = {
           inherit userSettings;
         };
