@@ -5,7 +5,7 @@
     brightnessctl
     hyprshot
     hyprpaper
-    hyprsunset
+    hyprshade
     networkmanagerapplet
     swaynotificationcenter
     dunst
