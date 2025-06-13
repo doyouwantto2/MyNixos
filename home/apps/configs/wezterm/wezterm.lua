@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local config = {}
+local act = wezterm.action
 
 config.color_scheme = "rebecca"
 config.window_background_opacity = 0.8
@@ -78,6 +79,79 @@ config.window_frame = {
 	active_titlebar_bg = colors.mantle,
 	inactive_titlebar_bg = colors.base,
 	font_size = 12.0,
+}
+
+local resizeGap = 3
+
+config.leader = { key = "w", mods = "ALT", timeout_milliseconds = 1000 }
+config.keys = {
+	{
+		mods = "LEADER",
+		key = "d",
+		action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
+
+	{
+		mods = "LEADER",
+		key = "a",
+		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+
+	{
+		mods = "LEADER",
+		key = "Space",
+		action = act.PaneSelect({
+			mode = "SwapWithActive",
+		}),
+	},
+
+	{
+		key = "h",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Left"),
+	},
+
+	{
+		key = "l",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Right"),
+	},
+
+	{
+		key = "k",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Up"),
+	},
+
+	{
+		key = "j",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Down"),
+	},
+
+	{
+		key = "LeftArrow",
+		mods = "CTRL",
+		action = act.AdjustPaneSize({ "Left", resizeGap }),
+	},
+
+	{
+		key = "DownArrow",
+		mods = "CTRL",
+		action = act.AdjustPaneSize({ "Down", resizeGap }),
+	},
+
+	{
+		key = "UpArrow",
+		mods = "CTRL",
+		action = act.AdjustPaneSize({ "Up", resizeGap }),
+	},
+
+	{
+		key = "RightArrow",
+		mods = "LEADER",
+		action = act.AdjustPaneSize({ "Right", resizeGap }),
+	},
 }
 
 config.enable_tab_bar = false
