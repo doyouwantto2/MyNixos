@@ -41,6 +41,7 @@
     ".config/nvim".source = ./apps/configs/nvim;
     ".config/hypr".source = ./apps/configs/hypr;
     ".config/eww".source = ./apps/configs/eww;
+    ".config/wezterm".source = ./apps/configs/wezterm;
   };
 
   # Home Manager can also manage your environment variables through
