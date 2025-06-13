@@ -1,6 +1,7 @@
 { config, pkgs, ...}:
 {
   home.packages = with pkgs; [
+    zsh
     wezterm
     neovim
     kando

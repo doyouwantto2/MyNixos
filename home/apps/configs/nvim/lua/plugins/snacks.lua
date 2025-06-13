@@ -1,12 +1,15 @@
 return {
-  "snacks.nvim",
-  opts = {
-    dashboard = {
-      preset = {
-        pick = function(cmd, opts)
-          return LazyVim.pick(cmd, opts)()
-        end,
-        header = [[
+	"snacks.nvim",
+	opts = {
+		image = {
+			enable = true,
+		},
+		dashboard = {
+			preset = {
+				pick = function(cmd, opts)
+					return LazyVim.pick(cmd, opts)()
+				end,
+				header = [[
         
 
   _____               _                   ____    _  _      __     _____ 
@@ -31,7 +34,7 @@ return {
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
-      },
-    },
-  },
+			},
+		},
+	},
 }
