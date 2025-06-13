@@ -4,7 +4,7 @@
     lua
     lua-language-server
     luarocks
-    luajit
+    luajit_openresty
   ];
 }
 
