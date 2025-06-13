@@ -119,12 +119,10 @@
     home-manager
 
     # Text editor
-    neovim
     vscode
 
     # Terminal emulator
     kitty
-    wezterm
 
     pipewire
     unzip
