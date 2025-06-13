@@ -88,13 +88,13 @@ config.leader = { key = "W", mods = "ALT", timeout_milliseconds = 1000 }
 config.keys = {
 	{
 		mods = "LEADER",
-		key = "d",
+		key = "a",
 		action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 	},
 
 	{
 		mods = "LEADER",
-		key = "a",
+		key = "d",
 		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
 
