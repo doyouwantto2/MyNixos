@@ -4,6 +4,7 @@
     lua
     lua-language-server
     luarocks
+    luajit
   ];
 }
 
