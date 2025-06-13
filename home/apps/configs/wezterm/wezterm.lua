@@ -5,7 +5,7 @@ local act = wezterm.action
 config.color_scheme = "rebecca"
 config.window_background_opacity = 0.8
 config.warn_about_missing_glyphs = false
-config.enable_wayland = false
+config.enable_wayland = true
 
 config.use_fancy_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = false
