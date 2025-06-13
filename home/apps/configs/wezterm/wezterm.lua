@@ -5,6 +5,7 @@ local act = wezterm.action
 config.color_scheme = "rebecca"
 config.window_background_opacity = 0.8
 config.warn_about_missing_glyphs = false
+config.enable_wayland = true
 
 config.use_fancy_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = false
@@ -79,6 +80,79 @@ config.window_frame = {
 	active_titlebar_bg = colors.mantle,
 	inactive_titlebar_bg = colors.base,
 	font_size = 12.0,
+}
+
+local resizeGap = 3
+
+config.leader = { key = "W", mods = "ALT", timeout_milliseconds = 1000 }
+config.keys = {
+	{
+		mods = "LEADER",
+		key = "a",
+		action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
+
+	{
+		mods = "LEADER",
+		key = "d",
+		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+
+	{
+		mods = "LEADER",
+		key = "Space",
+		action = act.PaneSelect({
+			mode = "SwapWithActive",
+		}),
+	},
+
+	{
+		key = "h",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Left"),
+	},
+
+	{
+		key = "l",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Right"),
+	},
+
+	{
+		key = "k",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Up"),
+	},
+
+	{
+		key = "j",
+		mods = "LEADER",
+		action = act.ActivatePaneDirection("Down"),
+	},
+
+	{
+		key = "LeftArrow",
+		mods = "CTRL",
+		action = act.AdjustPaneSize({ "Left", resizeGap }),
+	},
+
+	{
+		key = "DownArrow",
+		mods = "CTRL",
+		action = act.AdjustPaneSize({ "Down", resizeGap }),
+	},
+
+	{
+		key = "UpArrow",
+		mods = "CTRL",
+		action = act.AdjustPaneSize({ "Up", resizeGap }),
+	},
+
+	{
+		key = "RightArrow",
+		mods = "CTRL",
+		action = act.AdjustPaneSize({ "Right", resizeGap }),
+	},
 }
 
 config.enable_tab_bar = false
