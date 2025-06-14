@@ -6,6 +6,8 @@
     hyprshot
     hyprpaper
     hyprshade
+    hyprlock
+    hypridle
     networkmanagerapplet
     swaynotificationcenter
     dunst
