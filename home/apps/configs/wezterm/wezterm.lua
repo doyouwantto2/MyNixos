@@ -84,7 +84,7 @@ config.window_frame = {
 
 local resizeGap = 3
 
-config.leader = { key = "W", mods = "ALT", timeout_milliseconds = 1000 }
+config.leader = { key = "w", mods = "ALT", timeout_milliseconds = 1000 }
 config.keys = {
 	{
 		mods = "LEADER",
