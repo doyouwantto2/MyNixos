@@ -49,7 +49,7 @@ keybind = super+shift+j=goto_split:down
 keybind = super+shift+h=goto_split:left
 keybind = super+shift+l=goto_split:right
 
-keybind = super+shift+a=resize_split:left,5
-keybind = super+shift+s=resize_split:down,5
-keybind = super+shift+w=resize_split:up,5
-keybind = super+shift+d=resize_split:right,5
+keybind = super+shift+a=resize_split:left,15
+keybind = super+shift+s=resize_split:down,15
+keybind = super+shift+w=resize_split:up,15
+keybind = super+shift+d=resize_split:right,15
