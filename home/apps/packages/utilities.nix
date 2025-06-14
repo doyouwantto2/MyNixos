@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     zsh
     wezterm
-    ghostty
     neovim
     kando
     gnomeExtensions.kando-integration
