@@ -39,9 +39,17 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-keybind = alt+shift+d=new_split:left
-keybind = alt+shift+a=new_split:up
+keybind = alt+shift+h=new_split:left
+keybind = alt+shift+l=new_split:right
+keybind = alt+shift+k=new_split:up
+keybind = alt+shift+j=new_split:down
+
 keybind = super+shift+k=goto_split:up
 keybind = super+shift+j=goto_split:down
 keybind = super+shift+h=goto_split:left
 keybind = super+shift+l=goto_split:right
+
+keybind = super+shift+a=resize_split:left,5
+keybind = super+shift+s=resize_split:down,5
+keybind = super+shift+w=resize_split:up,5
+keybind = super+shift+d=resize_split:right,5
