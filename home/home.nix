@@ -42,6 +42,7 @@
     ".config/hypr".source = ./apps/configs/hypr;
     ".config/eww".source = ./apps/configs/eww;
     ".config/wezterm".source = ./apps/configs/wezterm;
+    ".config/ghostty".source = ./apps/configs/ghostty;
   };
 
   # Home Manager can also manage your environment variables through
