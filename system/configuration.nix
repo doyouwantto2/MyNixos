@@ -128,7 +128,7 @@
     unzip
   ];
 
-  i18n.inputMethod = {
+  i18n.type = {
     enable = true;
     ibus.engines = with pkgs.ibus-engines; [
       bamboo
