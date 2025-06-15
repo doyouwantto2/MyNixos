@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    inputs.yandex-browser.packages.x86_64-linux.yandex-browser-beta
+    terraform-providers.yandex
     yandex-disk
     yandex-cloud
     teams-for-linux
