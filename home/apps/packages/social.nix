@@ -1,9 +1,7 @@
 { config, pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    terraform-providers.yandex
-    yandex-disk
-    yandex-cloud
+    xplorer
     teams-for-linux
     discord
     zoom-us
