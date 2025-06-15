@@ -129,7 +129,7 @@
   ];
 
   i18n.inputMethod = {
-    enabled = "ibus";
+    enable = true;
     ibus.engines = with pkgs.ibus-engines; [
       bamboo
       mozc
