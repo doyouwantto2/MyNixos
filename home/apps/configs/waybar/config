@@ -5,7 +5,7 @@
 	"margin-top": 10,
 	"modules-left": ["custom/launcher", "cpu","memory", "network","custom/spotify", "tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["backlight","pulseaudio","clock", "battery", "custom/power"],
+	"modules-right": ["backlight","pulseaudio","clock", "battery", "custom/power", "custom/notification"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -50,8 +50,9 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": "{: %I:%M %p   %d/%m/%Y}"
-    },
+    "tooltip": false,
+    "format": " {:%H:%M}",
+  },
     "cpu": {
         "interval": 15,
         "format": " {}%",
