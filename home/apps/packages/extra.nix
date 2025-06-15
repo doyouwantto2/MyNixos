@@ -7,6 +7,9 @@
     fd
     ripgrep
     libGLU
+    ibus
+    ibus-engines.bamboo
+    ibus-engines.mozc
   ];
 }
 
