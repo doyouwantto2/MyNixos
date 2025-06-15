@@ -1,6 +1,9 @@
 { config, pkgs, ...}:
 {
   home.packages = with pkgs; [
+    yandex-browser
+    yandex-disk
+    yandex-cloud
     teams-for-linux
     discord
     zoom-us
