@@ -3,9 +3,14 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+    yandex-browser = {
+      url = "github:Teu5us/nix-yandex-browser";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, ... }: 
+  outputs = { nixpkgs, home-manager, ... }@inputs: 
     let
 
       userSettings = rec {
@@ -28,6 +33,7 @@
         pkgs = userSettings.pkgs;
         extraSpecialArgs = {
           inherit userSettings;
+          inherit inputs;
         };
 
         modules = [ ./home/home.nix ];

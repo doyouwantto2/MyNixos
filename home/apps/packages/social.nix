@@ -1,7 +1,7 @@
-{ config, pkgs, ...}:
+{ config, pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    yandex-browser
+    inputs.yandex-browser.packages.x86_64-linux.yandex-browser-stable
     yandex-disk
     yandex-cloud
     teams-for-linux

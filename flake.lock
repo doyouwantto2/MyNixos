@@ -52,7 +52,28 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "yandex-browser": "yandex-browser"
+      }
+    },
+    "yandex-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738661312,
+        "narHash": "sha256-jB/D+7rTUMAhp6m3BPIJ8QgN5if6xi6tjJ/Rwt3U8hI=",
+        "owner": "Teu5us",
+        "repo": "nix-yandex-browser",
+        "rev": "bdc6fca259f9435e7e9606fca2256905a36f48e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Teu5us",
+        "repo": "nix-yandex-browser",
+        "type": "github"
       }
     }
   },
