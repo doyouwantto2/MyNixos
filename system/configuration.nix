@@ -128,14 +128,6 @@
     unzip
   ];
 
-  i18n.inputMethod = {
-    type = "ibus";
-    enable = true;
-    ibus.engines = with pkgs.ibus-engines; [
-      bamboo
-      mozc
-  ];
-  };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
