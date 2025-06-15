@@ -1,7 +1,6 @@
 { config, pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    xplorer
     teams-for-linux
     discord
     zoom-us

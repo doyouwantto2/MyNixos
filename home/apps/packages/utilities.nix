@@ -7,6 +7,7 @@
     kando
     gnomeExtensions.kando-integration
     cava
+    spacedrive
     evince
     rofi-wayland
     swww
