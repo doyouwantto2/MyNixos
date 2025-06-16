@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     teams-for-linux
+    slack
     discord
     zoom-us
     spotify
