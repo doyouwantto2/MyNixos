@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    morgen
+    thunderbird
     zsh
     wezterm
     neovim
