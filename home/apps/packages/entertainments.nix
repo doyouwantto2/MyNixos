@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     keypunch
-    librum
+    foliate
     mindustry-wayland
   ];
 }
