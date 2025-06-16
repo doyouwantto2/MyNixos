@@ -117,7 +117,6 @@
     # Core
     git
     home-manager
-    flatpak
 
     # Text editor
     vscode
