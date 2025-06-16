@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     teams-for-linux
+    yandex
     slack
     discord
     zoom-us
