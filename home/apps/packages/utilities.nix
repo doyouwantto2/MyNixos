@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    morgen
     zsh
     wezterm
     neovim
