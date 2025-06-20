@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     thunderbird
+    blueman
     zsh
     wezterm
     neovim
