@@ -117,7 +117,6 @@
     # Core
     git
     home-manager
-    gnome-tecla
 
     # Text editor
     vscode
@@ -130,12 +129,12 @@
   ];
 
   i18n.inputMethod = {
-    type = "ibus";
+    type = "fcitx5";
     enable = true;
-    ibus.engines = with pkgs.ibus-engines; [
-      bamboo
-      mozc
-  ];
+    fcitx5.addons = with pkgs; [
+      fcitx5-mozc
+      fcitx5-gtk
+    ];
   };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
