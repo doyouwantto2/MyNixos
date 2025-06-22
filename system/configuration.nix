@@ -137,6 +137,16 @@
       fcitx5-bamboo
     ];
   };
+
+  services.dbus.enable = true;
+
+  # Nếu bạn dùng Wayland:
+  environment.sessionVariables = {
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+    INPUT_METHOD = "fcitx";
+  };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
