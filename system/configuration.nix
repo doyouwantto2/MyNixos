@@ -134,6 +134,7 @@
     fcitx5.addons = with pkgs; [
       fcitx5-mozc
       fcitx5-gtk
+      fcitx5-bamboo
     ];
   };
   # Some programs need SUID wrappers, can be configured further or are
