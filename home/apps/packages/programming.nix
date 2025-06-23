@@ -1,7 +1,7 @@
 { config, pkgs, inputs,...}:
 {
   home.packages = with pkgs; [
-    tableplus
+    dbgate
     arduino
     krita
     wpsoffice
