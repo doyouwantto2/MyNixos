@@ -99,6 +99,10 @@
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
 
+  
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -108,8 +112,7 @@
   #Install nix-ld
   programs.nix-ld.enable = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  programs.steam.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
