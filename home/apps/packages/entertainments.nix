@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     keypunch
-    wine
+    protonplus
     foliate
     mindustry-wayland
   ];
