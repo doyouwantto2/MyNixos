@@ -2,7 +2,8 @@
 {
   home.packages = with pkgs; [
     keypunch
-    protonplus
+    gamemode
+    heroic
     foliate
     mindustry-wayland
   ];
