@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     keypunch
-    wine-wayland
+    wine
     foliate
     mindustry-wayland
   ];
