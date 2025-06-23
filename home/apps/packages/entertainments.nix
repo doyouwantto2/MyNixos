@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     keypunch
-    steam
+    heroic
     foliate
     mindustry-wayland
   ];
