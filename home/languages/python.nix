@@ -6,6 +6,7 @@
       pandas 
       opencv
       matplotlib
+      discordpy
     ]))
   ];
 }
