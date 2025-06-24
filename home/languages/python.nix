@@ -6,7 +6,8 @@
       pandas 
       opencv
       matplotlib
-      discordpy
+      tensorflow
+      scikit-learn
     ]))
   ];
 }
